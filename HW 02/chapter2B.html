@@ -1,0 +1,31 @@
+<!-- Chapter 2, Branch 2 -->
+
+<html>
+	<head>
+		<title> Interactive Game </title>
+		<link rel="icon" href="assets/favicon.ico" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+		<script>
+			function inputController1() {
+				parent.location='chapter3A.html';
+			}
+			function inputController2() {
+				parent.location='chapter3B.html';
+			}
+		</script>
+	</head>
+	<body>
+		<div class='grid-1col'>	
+		<h1 class='text-sepia amatic-font large-header'>Downstairs: Foyer</h1>
+		<p class='text-sepia amatic-font large-text'>
+			As you hastily descend the stairs, you find yourself in the foyer.<br> To your left, you see the front door.<br> You know that you could run to safety, or even make it to your car. <br>
+			As you look to your right, you see the back door is a straight shot through the kitchen.<br> You could try to make a run for the barn, or the woods beyond it.<br>
+			Where do you go?
+		</p>
+		</div>
+		<div class='container'>
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Front Door' onClick="inputController2()">
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Kitchen' onClick="inputController1()">
+	</body>
+</html>

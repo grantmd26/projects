@@ -1,0 +1,30 @@
+<!-- Intro -->
+
+<html>
+	<head>
+
+		<title> Get Out Alive </title>
+		<link rel="icon" href="assets/favicon.ico" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+		<script>
+			function inputController() {
+				parent.location='chapter1.html';
+			}
+		</script>
+	</head>
+	<body>
+		<div class='grid-1col'>
+		<h1 class='text-sepia amatic-font large-header'> Get Out Alive </h1><br>
+		<img src='assets/eyes1.jpg' width='450'>			
+		<h2 class='text-sepia amatic-font medium-header'> A "Choose your own adventure" Story </h2>	<br>
+			<p class='text-sepia amatic-font large-text'>
+			Make the right choices and escape with your life </br>
+			Make the wrong choices and it's game over.
+			</p>
+		</div>
+		<div class='container'>
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Begin' onClick="inputController()">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- Chapter 4, Branch 2-->
+
+<html>
+	<head>
+		<title> Interactive Game </title>
+		<link rel="icon" href="assets/favicon.ico" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">		
+		<script>
+			function inputController1() {
+				parent.location='chapter5A.html';
+			}
+			function inputController2() {
+				parent.location='chapter5B.html';
+			}
+		</script>
+	</head>
+	<body>
+		<div class='grid-1col'>		
+		<h1 class='text-sepia amatic-font large-header'>The Back Yard</h1>
+		<p class='text-sepia amatic-font large-text'>
+			The cool air hits your face as you make it to the back yard. The barn lies in the distance.<br> There are numerous places to hide in there, along with things you could use to defend yourself.<br> Your car would also be a short run from here. You could be on the road in a matter of seconds.<br>
+			What do you do?
+		</p>
+		</div>
+		<div class='container'>
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Run for the barn' onClick="inputController1()">
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Run for the car' onClick="inputController2()">	
+		</div>
+	</body>
+</html>

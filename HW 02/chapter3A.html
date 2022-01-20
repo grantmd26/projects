@@ -1,0 +1,32 @@
+<!-- Chapter 3, Branch 1 -->
+
+<html>
+	<head>
+		<title> Interactive Game </title>
+		<link rel="icon" href="assets/favicon.ico" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">		
+		<script>
+			function inputController1() {
+				parent.location='chapter4A.html';
+			}
+			function inputController2() {
+				parent.location='chapter4B.html';
+			}			
+		</script>
+	</head>
+	<body>
+		<div class='grid-1col'>	
+		<h1 class='text-sepia amatic-font large-header'>The Kitchen</h1>
+		<p class='text-sepia amatic-font large-text'>
+			Exhaustion and rage set in as you reach the kitchen.<br> You know running out the back door is the safest option, but you're tired of running.<br> You see a large knife on the counter, and consider standing your ground.<br>
+			What do you do?
+		</p>
+		</div>
+
+		<div class='container'>
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Grab the knife and fight' onClick="inputController1()">
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Leave through the back door' onClick="inputController2()">			
+		</div>
+	</body>
+</html>

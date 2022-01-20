@@ -1,0 +1,36 @@
+<!-- Chapter 5, Branch 1 -->
+
+<html>
+	<head>
+		<title> Interactive Game </title>
+		<link rel="icon" href="assets/favicon.ico" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">			
+		<script>
+			function inputController1(){
+					parent.location='chapter6C.html';
+				}
+			function inputController2(){
+					parent.location='chapter6A.html';
+				}
+			function inputController3(){
+					parent.location='chapter6B.html';
+				}
+		</script>
+	</head>
+	<body>
+		<div class='grid-1col'>			
+		<h1 class='text-sepia amatic-font large-header'>The Barn</h1>
+		<p class='text-sepia amatic-font large-text'>
+			As quickly as you can, you throw open the door to the barn and run inside.<br> You begin to realize that there's nowhere else to run, and only one of you will be leaving the barn alive. <br>
+			You find a nice spot for an ambush, and look at the various tools and farm implements laying around. <br>
+			Hanging on the wall you see a shotgun. Beside that on a work bench lies a chainsaw.<br> And propped up in the corner is a long pitchfork with three sharp prongs on the end.
+		</p>
+		</div>
+		<div class='container'>
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Pitchfork' onClick="inputController1()">
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Shotgun' onClick="inputController2()">
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Chainsaw' onClick="inputController3()">	
+			</div>
+	</body>
+</html>

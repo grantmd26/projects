@@ -1,0 +1,40 @@
+<!-- Chapter 1 -->
+
+<html>
+	<head>
+		<title> Interactive Game </title>
+		<link rel="icon" href="assets/favicon.ico" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">	
+		<script>
+			function inputController1() {
+				parent.location='chapter2A.html';
+			}
+			function inputController2() {
+				parent.location='chapter2B.html';
+			}			
+		</script>			
+	</head>
+	<body>
+		<div class='grid-1col'>		
+		<h1 class='text-sepia amatic-font large-header'> It's Coming For You</h1>
+		<p class='text-sepia amatic-font large-text'>
+			As you peek through the slats of your closet, you know two things:
+		<ol>
+			<li class='text-sepia amatic-font large-text'> If you stay here, it will find you. </li>
+			<li class='text-sepia amatic-font large-text'> If it finds you, you're dead. </li>
+		</ol>
+		</p>
+		</div>
+		<div class='grid-1col'>	
+		<p class='text-sepia amatic-font large-text'>
+			You don't know exactly where it is, but you need to decide fast. <br> You remember that you could use the window in the guest room to get to the roof, and make your way to the ground. <br> You've used it many times before to sneak out at night. <br> You also know that if you go downstairs, the front door or the back would be easy to get to. </br></br>
+			What do you do?
+		</p>
+		</div>
+		<div class='container'>
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Go for the guest room window' onClick="inputController1()">
+			<input type="button" class='button' style="width:250px; font-size: 25px" value='Go downstairs' onClick="inputController2()">			
+		</div>
+	</body>
+</html>
